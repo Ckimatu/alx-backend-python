@@ -3,14 +3,14 @@
 """
 contains an annotated function
 """
-from typing import Tuple, List
+from typing import List
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
+def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
     """
     Creates multiple copies of items in a tuple
     """
-    zoomed_in: List = [
+    zoomed_in: List[int] = [
             item for item in lst
             for i in range(factor)
             ]
